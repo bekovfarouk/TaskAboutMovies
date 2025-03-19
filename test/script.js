@@ -442,7 +442,7 @@
 // alert( +"Infinity" );
 // console.log("Ёжик" > "яблоко");
 // console.log(0 || "" || 2 || undefined || true || falsе);
-// a = [1, 2, 3]; b = [1, 2, 3];  
+// a = [1, 2, 3]; b = [1, 2, 3];
 // console.log(a==b);
 
 // const restorantData = {
@@ -471,7 +471,6 @@
 //   averageLunchPrice: "20$",
 //   openNow: true,
 // };
-
 
 // function isOpen(prop) {
 //   let answer = "";
@@ -504,17 +503,228 @@
 //   return copy;
 // }
 
-// console.log(transferWaitors(restorantData)); 
+// console.log(transferWaitors(restorantData));
 
-const pArr = document.getElementsByTagName('div');
-console.log(pArr);
+// const pArr = document.getElementsByTagName('div');
+// console.log(pArr);
 
-const pArr1 = document.getElementsByClassName('container');
-console.log(pArr1);
-let nodes = document.querySelectorAll("div");
-for (let [index, node] of nodes.entries()) {
-  console.log(index, node); // Индекс и сам элемент
-}
+// const pArr1 = document.getElementsByClassName('container');
+// console.log(pArr1);
+// let nodes = document.querySelectorAll("div");
+// for (let [index, node] of nodes.entries()) {
+//   console.log(index, node); // Индекс и сам элемент
+// }
 
-const arr = [1,2,3,5,6]
+// const arr = [1,2,3,5,6]
+// console.log(arr);
+
+// const itemList = document.getElementById("itemList");
+
+// itemList.addEventListener("click", function (event) {
+//   // Ensure the event is fired on an existing <li> item
+//   if (event.target && event.target.tagName === "LI") {
+//     console.log("You clicked on: " + event.target.textContent);
+
+//   }
+// });
+
+//    // Create a new <li> element and append it
+//     const newItem = document.createElement("li");
+//     newItem.textContent = "I am a new element";
+//     itemList.appendChild(newItem);
+
+// const itemList = document.getElementById("itemList"); // Parent element (e.g., <ul> or <ol>)
+
+// // Adding click event listeners to existing <li> elements
+// itemList.querySelectorAll("li").forEach((e, i) => {
+//   e.addEventListener("click", () => {
+//     console.log(i, e.textContent);  // Logs the index and text content of the clicked <li>
+//   });
+// });
+
+// // Dynamically adding a new <li> element
+// const newItem = document.createElement("li");
+// newItem.textContent = "I am a new element";
+
+// // Append the new <li> to the parent <ul> or <ol>
+// itemList.appendChild(newItem);
+
+// // Optionally, you could re-attach event listeners to the newly added item, if necessary.
+// // However, with event delegation (explained below), this might not be needed.
+
+// function repeatMessage() {
+//   console.log("This will repeat every 2 seconds!");
+//   setTimeout(repeatMessage, 2000);
+// }
+
+// // Start the repeated message
+// setTimeout(repeatMessage, 2000);
+
+// for (let i = 0; i < 15; i++) {
+//   setTimeout(() => {
+//     console.log(`Message ${i + 1}`);
+//   }, i * 1000); // Delay increases by 1 second for each iteration
+// }
+// Set a delay before starting the interval
+// setTimeout(() => {
+//   const intervalID = setInterval(() => {
+//     console.log("This will print every 2 seconds.");
+//   }, 2000);
+
+//   // Stop the interval after 10 seconds
+//   setTimeout(() => {
+//     clearInterval(intervalID);
+//     console.log("Interval cleared!");
+//   }, 10000);
+// }, 3000);  // Delay the start of the interval by 3 seconds
+
+// "use strict";
+// const btn = document.querySelector(".btn");
+
+// function myAnimation() {
+//   const box = document.querySelector(".box");
+//   let pos = 0;
+
+//   const id = setInterval(frame, 5);
+
+//   function frame() {
+//     if (pos <= 300 && pos >= 0) {
+//       pos++;
+//       box.style.top = pos + "px";
+//       box.style.left = pos + "px";
+//       if ((pos > 300)) {
+//         pos = -pos;
+//       }
+//     } else if (pos < 0) {
+//       pos++;
+//       console.log(pos);
+//       box.style.top = -pos + "px";
+//       box.style.left = -pos + "px";
+//     }
+//   }
+// }
+
+// btn.addEventListener("click", myAnimation);
+
+// const id = Symbol('id');
+// const user = {
+//   name: 'Alice',
+//   [id]: 1234  // Using symbol as a property key
+// };
+
+// console.log(user.name);  // 'Alice'
+// console.log(user[id]);   // 1234
+
+// console.log(Object.getOwnPropertyDescriptor(user, "name"));
+// Object.defineProperty(user, "name", { writable: false });
+// console.log(Object.getOwnPropertyDescriptor(user, "name"));
+// user.name = "Jhon";
+
+// const person = {
+//   firstName: 'John',
+//   lastName: 'Doe'
+// };
+
+// // Get the descriptor for the property firstName
+// const descriptor = Object.getOwnPropertyDescriptor(person, 'firstName');
+
+// console.log(descriptor);
+// // Output:
+// // {
+// //   value: "John",
+// //   writable: true,
+// //   enumerable: true,
+// //   configurable: true
+// // }
+
+"use strict";
+
+// const user = {
+//   name: "Alex",
+//   surname: "Smith",
+//   birthday: "19/09/1990",
+//   ShowMyPublicData: function () {
+//     console.log(`${this.name} ${this.surname}`);
+//   },
+// };
+
+// console.log(user);
+
+// // for (let key in user) {
+// //   console.log(user[key]);
+// // }
+
+// const arr = ["a", "b", "c"];
+// console.log(arr);
+// for(let key in arr){
+//   console.log(arr[key]);
+// }
+// console.log(Object.keys(arr));
+// const str = 'Said'
+// // for (let key in str) {
+// //   console.log(key);
+// // }
+// console.log(Object.values(str));
+
+// const arr = [
+//   [1, 2],
+//   [2, 3],
+//   [4, 5],
+//   [6, 7],
+//   [7, 8],
+// ];
+
+// console.log(arr);
+// const obj = Object.fromEntries(arr);
+// console.log(obj);
+
+// console.log(Object.entries(obj));
+
+// const arr = [1, 2, 3, 4, 5, 6, 6, 6, 3, 4, 2, 4, 5, 7, 4, 8, 6, 9];
+// console.log(arr);
+
+// function uniqeArray (arr){
+//   return Array.from(new Set(arr))
+// }
+
+// console.log(uniqeArray(arr));
+
+// function amountOfPages(summary) {}
+// amountOfPages(5) => 5
+// amountOfPages(25) => 17
+// amountOfPages(1095) => 401
+// amountOfPages(185) => 97
+
+// function amountOfPages(summary) {
+//   let result = "";
+//   let n = 0;
+
+//   for (let i = 1; i <= summary; i++) {
+//     result += i;
+//     if (result.length === summary) {
+//       n = i;
+//       break;
+//     }
+//   }
+
+//   return n ? n : "Bu rəqəmlərdən tam ədəd düzəlmir";
+// }
+
+// console.log(amountOfPages(1));
+
+// let currentDate = new Date();
+// currentDate.setHours(5);
+// console.log(currentDate); // Sets year to 2023
+
+let start = new Date();
+const arr = [1, 2, 3, 4, 5, 6, 6, 6, 3, 4, 2, 4, 5, 7, 4, 8, 6, 9];
 console.log(arr);
+function uniqeArray(arr) {
+  return Array.from(new Set(arr));
+}
+console.log(uniqeArray(arr));
+let end = new Date();
+
+alert(
+  `The iteration time of the function is  ${ end - start} miliseconds`
+);
